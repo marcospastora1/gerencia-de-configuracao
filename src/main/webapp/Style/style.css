@@ -1,0 +1,77 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26 de ago de 2022, 08:16:49
+    Author     : henrique
+*/
+
+@charset "UTF-8";
+
+table, a{
+    font-size:12pt;
+    font-family: verdana;
+}
+.title-produtos {
+    color: black;
+    text-align: center;
+    font-family: verdana;
+    margin-bottom: 30px;
+}
+
+a{
+    display:inline-block;
+    width:50%;
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    color: #05B2D9;
+    text-decoration: underline;
+}
+.produtos{
+    border-collapse: collapse;
+    width:80%;
+    margin-left: 10%;
+
+}
+.td-produtos{
+    border:1px solid black;
+    text-align: center;
+}
+
+.th-produtos{
+    border:1px solid black;
+    text-align: center;
+    background-color: #D5D5D5;
+}
+
+#novo {
+    margin-left: 10%;
+}
+
+.cadastro {
+    font-size:12pt;
+    font-family: verdana;
+}
+.titulo-cadastro, .titulo-edicao{
+    color: black;
+    font-family: verdana;
+}
+
+button {
+    width: 200px;
+}
+
+#button {
+    text-align: center;
+
+}
+
+.td-cadastro, .td-edicao {
+    width: 200px;
+    height: 30px;
+}
