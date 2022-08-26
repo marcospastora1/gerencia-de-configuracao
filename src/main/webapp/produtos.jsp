@@ -11,6 +11,66 @@
         <link href="style/style.css" rel="stylesheet" type="text/css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Produtos</title>
+<<<<<<< HEAD
+        <style>
+            table, a{
+                font-size:12pt;
+                font-family: verdana;
+            }
+            h1 {
+                color: black;
+                text-align: center;
+                font-family: verdana;
+                margin-bottom: 30px;
+            }
+
+            a{
+                display:inline-block;
+                text-decoration: none;
+                color: blue;
+            }
+
+            a:hover {
+                color: #05B2D9;
+                text-decoration: underline;
+            }
+            table{
+                border-collapse: collapse;
+                width:80%;
+                margin-left: 10%;
+
+            }
+            td{
+                border:1px solid black;
+                text-align: center;
+            }
+
+            th {
+                border:1px solid black;
+                text-align: center;
+                background-color: #D5D5D5;
+            }
+
+            #novo {
+                margin-left: 10%;
+                margin-right: 10%;
+                margin-bottom: 20px;
+                
+                display: flex;
+                justify-content: space-between;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h1>Lista de Produtos</h1>
+        <div id="novo">
+     
+            <a href="/cadastroProduto" >+ Cadastrar novo produto</a>
+            <a href="/faleConosco" >Fale conosco</a>
+
+=======
     </head>
     <body>
         <h1 class="title-produtos">Lista de Produtos</h1>
@@ -19,6 +79,7 @@
             <a href="/cadastroProduto", id="novo" >+ Cadastrar novo produto</a>
             <br/>
             <br/>
+>>>>>>> master
         </div>
         <table class="produtos">
             <thead>

@@ -63,6 +63,12 @@ public class ProdutoController {
         return lista(model);
     }
     
+    //retorna a view para cadastro
+    @GetMapping({"/faleConosco"})
+    public String faleConosco() {
+        return "faleConosco";
+    }
+    
     
     @PostMapping({"/cadastroProduto"})
     public String cadastrarProduto(Model model, Produto produto){
