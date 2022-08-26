@@ -115,12 +115,13 @@
                 let inputEmail = document.getElementById('email');
                 let inputSenha = document.getElementById('senha');
 
+
                 if(inputEmail.value === '' || inputSenha.value === '') {
                     alert('Campos vazios ou dados inválidos. Tente Novamente.');
                 } else {
                     alert('Entrou!');  
                 }
-            }
+
         </script>
     </body>
 </html>

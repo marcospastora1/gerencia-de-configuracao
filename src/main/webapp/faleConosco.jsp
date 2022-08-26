@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>Formul·rio de contato</title>
+        <title>Formul√°rio de contato</title>
         <style>
          
             html {
@@ -13,7 +13,6 @@
                 font-family: verdana;
                 margin-bottom: 30px;
             }
-
             a{
                 display:inline-block;
                 text-decoration: none;
@@ -24,7 +23,6 @@
                 margin-left: 10%;
                 margin-bottom: 20px;
             }
-
             a:hover {
                 color: #05B2D9;
                 text-decoration: underline;
@@ -77,7 +75,6 @@
             }
             
            
-
         </style>
     </head>
     <body>
@@ -110,7 +107,7 @@
             let inputMensagem = document.getElementById('mensagem');
 
             if(inputEmail.value === '' || inputNome.value === '' || inputMensagem.value === '') {
-                alert('Campos vazios ou dados inv·lidos. Tente Novamente.');
+                alert('Campos vazios ou dados inv√°lidos. Tente Novamente.');
             } else {
                 alert('Mensagem com sucesso! Obrigado!');  
             }
@@ -121,5 +118,3 @@
     </body>
     
 </html>
-
-
