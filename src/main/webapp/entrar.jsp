@@ -1,7 +1,10 @@
-<!doctype html>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Formul·rio de contato</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Entrar</title>
+        
         <style>
          
             html {
@@ -73,47 +76,41 @@
             textarea {
                 width: 65%
             }
-            
-           
         </style>
     </head>
+    
     <body>
         <a href="/">Voltar</a>
-        <h1>Fale conosco</h1>
-        <form name="formContato" action="faleConosco.jsp" method="post">
-            <div class="input-field">
-                <label>Nome</label>
-                <input type="text" name="nome" id='nome' placeholder="Digite o nome" required/>
+        <h1>Entrar</h1>
+
+        <form>
+
+            <div>
+                <label for="e-mail">Email</label>
+                <input type="email" name="email" placeholder="seuemail@email.com" id="email" required>
             </div>
             
-            <div class="input-field">
-                <label>Email</label>
-                <input type="email" name="email" id='email' placeholder="Digite o seu email" required/>       
+            <div>
+                <label for="e-mail">Senha</label>
+                <input type="password" name="senha" placeholder="Senha" id="senha" required>
             </div>
             
-            <div class="input-field">
-                <label>Mensagem</label>
-                <textarea placeholder="Digite a sua mensagem" id='mensagem' required></textarea>       
+            <div>
+              <button type="submit" onclick="Entrar()">Entrar</button>
             </div>
 
-            <button type="submit" onclick="envioForm()">Enviar</button>
         </form>
-    <script>
-        
-        function envioForm() {
-        
-            let inputNome = document.getElementById('nome');
-            let inputEmail = document.getElementById('email');
-            let inputMensagem = document.getElementById('mensagem');
-            if(inputEmail.value === '' || inputNome.value === '' || inputMensagem.value === '') {
-                alert('Campos vazios ou dados inv·lidos. Tente Novamente.');
-            } else {
-                alert('Mensagem com sucesso! Obrigado!');  
-            }
             
-        }
-        
-    </script>
+        <script>
+            function Entrar() {
+                let inputEmail = document.getElementById('email');
+                let inputSenha = document.getElementById('senha');
+                if(inputEmail.value === '' || inputSenha.value === '') {
+                    alert('Campos vazios ou dados inv√°lidos. Tente Novamente.');
+                } else {
+                    alert('Entrou!');  
+                }
+            }
+        </script>
     </body>
-    
 </html>
