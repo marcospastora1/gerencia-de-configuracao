@@ -49,6 +49,10 @@
                 text-align: center;
                 background-color: #D5D5D5;
             }
+<<<<<<< HEAD
+=======
+
+>>>>>>> d85f70f6384cec8071bf5191ab708d465627ea58
             nav {
                 margin-left: 10%;
                 margin-right: 10%;
@@ -72,9 +76,30 @@
                 <a href="/faleConosco" >Fale conosco</a>
             </div>
 
+<<<<<<< HEAD
             
         </nav>
         <table>
+=======
+<<<<<<< HEAD
+            
+        </nav>
+        <table>
+=======
+=======
+    </head>
+    <body>
+        <h1 class="title-produtos">Lista de Produtos</h1>
+        <div>
+            <br/>
+            <a href="/cadastroProduto", id="novo" >+ Cadastrar novo produto</a>
+            <br/>
+            <br/>
+>>>>>>> master
+        </div>
+        <table class="produtos">
+>>>>>>> master
+>>>>>>> d85f70f6384cec8071bf5191ab708d465627ea58
             <thead>
                 <tr>
                     <th>Código</th>

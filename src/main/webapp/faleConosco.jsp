@@ -105,6 +105,10 @@
             let inputNome = document.getElementById('nome');
             let inputEmail = document.getElementById('email');
             let inputMensagem = document.getElementById('mensagem');
+<<<<<<< HEAD
+=======
+
+>>>>>>> d85f70f6384cec8071bf5191ab708d465627ea58
             if(inputEmail.value === '' || inputNome.value === '' || inputMensagem.value === '') {
                 alert('Campos vazios ou dados inválidos. Tente Novamente.');
             } else {
