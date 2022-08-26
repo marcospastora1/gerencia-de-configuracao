@@ -1,12 +1,9 @@
-<<<<<<< HEAD
-=======
 <%-- 
     Document   : entrar
     Created on : 26 de ago. de 2022, 15:36:28
     Author     : glayt
 --%>
 
->>>>>>> d85f70f6384cec8071bf5191ab708d465627ea58
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -25,10 +22,7 @@
                 font-family: verdana;
                 margin-bottom: 30px;
             }
-<<<<<<< HEAD
-=======
 
->>>>>>> d85f70f6384cec8071bf5191ab708d465627ea58
             a{
                 display:inline-block;
                 text-decoration: none;
@@ -39,10 +33,6 @@
                 margin-left: 10%;
                 margin-bottom: 20px;
             }
-<<<<<<< HEAD
-=======
-
->>>>>>> d85f70f6384cec8071bf5191ab708d465627ea58
             a:hover {
                 color: #05B2D9;
                 text-decoration: underline;
@@ -120,21 +110,17 @@
             
         <script>
             function Entrar() {
-<<<<<<< HEAD
-                let inputEmail = document.getElementById('email');
-                let inputSenha = document.getElementById('senha');
-=======
 
                 let inputEmail = document.getElementById('email');
                 let inputSenha = document.getElementById('senha');
 
->>>>>>> d85f70f6384cec8071bf5191ab708d465627ea58
+
                 if(inputEmail.value === '' || inputSenha.value === '') {
                     alert('Campos vazios ou dados inválidos. Tente Novamente.');
                 } else {
                     alert('Entrou!');  
                 }
-            }
+            
         </script>
     </body>
 </html>
