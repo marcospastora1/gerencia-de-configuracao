@@ -26,6 +26,16 @@
                 display:inline-block;
                 text-decoration: none;
                 color: blue;
+                
+                padding: 0 10px;
+            }
+            
+            a:first-of-type {
+                padding-left: 0;
+            }
+            
+            a:last-of-type {
+                padding-right: 0;
             }
 
             a:hover {
@@ -49,7 +59,7 @@
                 background-color: #D5D5D5;
             }
 
-            #novo {
+            nav {
                 margin-left: 10%;
                 margin-right: 10%;
                 margin-bottom: 20px;
@@ -63,12 +73,19 @@
     </head>
     <body>
         <h1>Lista de Produtos</h1>
-        <div id="novo">
-     
-            <a href="/cadastroProduto" >+ Cadastrar novo produto</a>
-            <a href="/faleConosco" >Fale conosco</a>
+        <nav>
+            <div>
+                <a href="/cadastroProduto" >+ Cadastrar novo produto</a>
+            </div>
+            
+            <div>
+                <a href="/entrar" >Entrar</a>
+                <a href="/inscrever" >Cadastre-se</a>
+                <a href="/faleConosco" >Fale conosco</a>
+            </div>
 
-        </div>
+            
+        </nav>
         <table>
             <thead>
                 <tr>

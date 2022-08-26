@@ -1,4 +1,4 @@
-<!<!doctype html>
+<!doctype html>
 <html>
     <head>
         <title>Formulário de contato</title>
@@ -81,22 +81,22 @@
         </style>
     </head>
     <body>
-        <h1>Fale conosco</h1>
         <a href="/">Voltar</a>
+        <h1>Fale conosco</h1>
         <form name="formContato" action="faleConosco.jsp" method="post">
             <div class="input-field">
                 <label>Nome</label>
-                <input type="text" name="nome" placeholder="Digite o nome" />
+                <input type="text" name="nome" id='nome' placeholder="Digite o nome" required/>
             </div>
             
             <div class="input-field">
                 <label>Email</label>
-                <input type="email" name="email" placeholder="Digite o seu email" />       
+                <input type="email" name="email" id='email' placeholder="Digite o seu email" required/>       
             </div>
             
             <div class="input-field">
                 <label>Mensagem</label>
-                <textarea placeholder="Digite a sua mensagem"></textarea>       
+                <textarea placeholder="Digite a sua mensagem" id='mensagem' required></textarea>       
             </div>
 
             <button type="submit" onclick="envioForm()">Enviar</button>
@@ -105,7 +105,15 @@
         
         function envioForm() {
         
-            alert('Mensagem enviada! Obrigado!');
+            let inputNome = document.getElementById('nome');
+            let inputEmail = document.getElementById('email');
+            let inputMensagem = document.getElementById('mensagem');
+
+            if(inputEmail.value === '' || inputNome.value === '' || inputMensagem.value === '') {
+                alert('Campos vazios ou dados inválidos. Tente Novamente.');
+            } else {
+                alert('Mensagem com sucesso! Obrigado!');  
+            }
             
         }
         
