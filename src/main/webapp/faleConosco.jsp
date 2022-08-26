@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>Formul·rio de contato</title>
+        <title>Formul√°rio de contato</title>
         <style>
          
             html {
@@ -105,12 +105,9 @@
             let inputNome = document.getElementById('nome');
             let inputEmail = document.getElementById('email');
             let inputMensagem = document.getElementById('mensagem');
-<<<<<<< HEAD
-=======
 
->>>>>>> d85f70f6384cec8071bf5191ab708d465627ea58
             if(inputEmail.value === '' || inputNome.value === '' || inputMensagem.value === '') {
-                alert('Campos vazios ou dados inv·lidos. Tente Novamente.');
+                alert('Campos vazios ou dados inv√°lidos. Tente Novamente.');
             } else {
                 alert('Mensagem com sucesso! Obrigado!');  
             }

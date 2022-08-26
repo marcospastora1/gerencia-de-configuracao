@@ -33,6 +33,7 @@
                 margin-left: 10%;
                 margin-bottom: 20px;
             }
+
             a:hover {
                 color: #05B2D9;
                 text-decoration: underline;
@@ -120,7 +121,7 @@
                 } else {
                     alert('Entrou!');  
                 }
-            
+
         </script>
     </body>
 </html>

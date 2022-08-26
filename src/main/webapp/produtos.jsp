@@ -49,6 +49,7 @@
                 text-align: center;
                 background-color: #D5D5D5;
             }
+
             nav {
                 margin-left: 10%;
                 margin-right: 10%;
@@ -71,9 +72,11 @@
                 <a href="/inscrever" >Cadastre-se</a>
                 <a href="/faleConosco" >Fale conosco</a>
             </div>
+
             
         </nav>
         <table>
+
 
     </head>
 

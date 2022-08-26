@@ -1576,9 +1576,7 @@ org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic c
 	at org.springframework.boot.devtools.restart.Restarter.stop(Restarter.java:309)
 	at org.springframework.boot.devtools.restart.Restarter.lambda$restart$1(Restarter.java:251)
 	at org.springframework.boot.devtools.restart.Restarter$LeakSafeThread.run(Restarter.java:629)
-<<<<<<< HEAD
-2022-08-26 18:26:15 jdbc[3]: exception
-=======
+
 2022-08-26 15:38:09 jdbc[19]: exception
 org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
@@ -1606,7 +1604,7 @@ org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic c
 	at org.springframework.boot.devtools.restart.Restarter.lambda$restart$1(Restarter.java:251)
 	at org.springframework.boot.devtools.restart.Restarter$LeakSafeThread.run(Restarter.java:629)
 2022-08-26 15:38:38 jdbc[3]: exception
->>>>>>> d85f70f6384cec8071bf5191ab708d465627ea58
+
 org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
 	at org.h2.message.DbException.get(DbException.java:179)
@@ -1632,6 +1630,7 @@ org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic c
 	at org.springframework.boot.devtools.restart.Restarter.stop(Restarter.java:309)
 	at org.springframework.boot.devtools.restart.Restarter.lambda$restart$1(Restarter.java:251)
 	at org.springframework.boot.devtools.restart.Restarter$LeakSafeThread.run(Restarter.java:629)
+
 2022-08-26 18:31:04 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
@@ -1689,3 +1688,4 @@ org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic c
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+
