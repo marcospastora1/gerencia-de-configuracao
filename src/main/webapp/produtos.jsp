@@ -19,12 +19,11 @@
                 color: black;
                 text-align: center;
                 font-family: verdana;
-                margin-bottom: 30;
+                margin-bottom: 30px;
             }
 
             a{
                 display:inline-block;
-                width:50%;
                 text-decoration: none;
                 color: blue;
             }
@@ -52,6 +51,11 @@
 
             #novo {
                 margin-left: 10%;
+                margin-right: 10%;
+                margin-bottom: 20px;
+                
+                display: flex;
+                justify-content: space-between;
             }
 
 
@@ -59,11 +63,11 @@
     </head>
     <body>
         <h1>Lista de Produtos</h1>
-        <div>
-            <br/>
-            <a href="/cadastroProduto", id="novo" >+ Cadastrar novo produto</a>
-            <br/>
-            <br/>
+        <div id="novo">
+     
+            <a href="/cadastroProduto" >+ Cadastrar novo produto</a>
+            <a href="/faleConosco" >Fale conosco</a>
+
         </div>
         <table>
             <thead>
