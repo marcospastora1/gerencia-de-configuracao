@@ -31,6 +31,7 @@
             a:last-of-type {
                 padding-right: 0;
             }
+            
             a:hover {
                 color: #05B2D9;
                 text-decoration: underline;
@@ -58,6 +59,32 @@
                 display: flex;
                 justify-content: space-between;
             }
+            #rodape {
+        height: 100px;
+        bottom: 0;
+        position: fixed;
+        background-color: #D5D5D5;
+        text-align: center;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    #direitosReservados{
+                
+               
+               
+    }
+    #sobre{
+      margin-left: px;
+      padding-left:50px;
+     
+      padding-right: 0px;
+      
+        
+    }
         </style>
     </head>
     <body>
@@ -116,5 +143,23 @@
 
             </tbody>
         </table>
+    <div class="container body-content">
+    <footer class="fixarRodape">
+        <div>
+            <div id = "rodape">
+                <nav>
+                    <div>
+                        <span id ='direitosReservados' style ='margin-left:50px;'>
+            &copy; Unisales, 2022 - Todos os direitos reservados
+                    </span>
+                        <a href="" style ="padding-left:700px;">Sobre</a>
+                    </div>
+                     
+                </nav>
+                
+                </div>
+            </div>
+    </footer>
+</div>
     </body>
 </html>

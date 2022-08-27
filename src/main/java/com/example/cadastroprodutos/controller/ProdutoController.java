@@ -81,16 +81,16 @@ public class ProdutoController {
     
     
     //retorna a view para se inscrever no site
-    @GetMapping({"/inscrever"})
-    public String inscrever() {
-        return "inscrever";
-    }
+    //@GetMapping({"/inscrever"})
+   // public String inscrever() {
+    //    return "inscrever";
+    //}
     
-    //retorna a view para entrar
-    @GetMapping({"/entrar"})
-    public String entrar() {
-        return "entrar";
-    }
+    ////retorna a view para entrar
+    //@GetMapping({"/entrar"})
+    //public String entrar() {
+    //    return "entrar";
+    //}
     
     @PostMapping({"/cadastroProduto"})
     public String cadastrarProduto(Model model, Produto produto){
