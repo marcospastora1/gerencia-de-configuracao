@@ -29,8 +29,8 @@ public class ProdutoController {
     @GetMapping({ "/", "/home", "/index" })
     public String home() {
         return "home";
-    }
-
+    }  
+    
     // retorna uma página contendo os dados
     @GetMapping({ "/produtos"})
     public String lista(Model model) {
