@@ -71,6 +71,7 @@
                 <a href="/entrar" >Entrar</a>
                 <a href="/inscrever" >Cadastre-se</a>
                 <a href="/faleConosco" >Fale conosco</a>
+                 <a href="/home" >Voltar</a>
             </div>
 
             
