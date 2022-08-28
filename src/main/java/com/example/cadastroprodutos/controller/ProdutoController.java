@@ -25,8 +25,14 @@ public class ProdutoController {
     @Autowired
     ProdutoRepository produtoRepository;
 
+      // retorna a view para cadastro
+    @GetMapping({ "/", "/home", "/index" })
+    public String home() {
+        return "home";
+    }
+
     // retorna uma página contendo os dados
-    @GetMapping({ "/", "/index" })
+    @GetMapping({ "/produtos"})
     public String lista(Model model) {
         List<Produto> produtos = produtoRepository.findAll();
 
