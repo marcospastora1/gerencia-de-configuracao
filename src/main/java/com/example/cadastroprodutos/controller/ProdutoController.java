@@ -87,6 +87,10 @@ public class ProdutoController {
         return "entrar";
     }
 
+    @GetMapping({ "/cadusuario"})
+    public String cadusuario(Model model) {
+        return "cadusuario";    
+    }
     
     
     
