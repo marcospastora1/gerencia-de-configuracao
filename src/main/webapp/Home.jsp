@@ -19,7 +19,7 @@
 <body>
     <div> <img src="/Imagens do Projeto/home.png" alt="home">
         <div>
-            <div> <button><a href="/home" > HOME</a> </button> | <button> <a href="/CadastroProduto"> PRODUTOS</a> </button>|
+            <div> <button><a href="/home" > HOME</a> </button> | <button> <a href="/produtos"> PRODUTOS</a> </button>|
                 <button><a href="#">SOBRE</a></button> | <button><a href="/faleConosco">CONTATO</a></button> </div>
         </div>
         <div>
