@@ -22,26 +22,26 @@ import com.example.cadastroprodutos.repository.FornecedorRepository;
  */
 @Controller
 public class FornecedoresController {
-     @Autowired
+    @Autowired
     FornecedorRepository fornecedorRepository;
 
-    //retorna uma página contendo os dados
-    @GetMapping({"/fornecedores"})
+    // retorna uma página contendo os dados
+    @GetMapping({ "/fornecedores" })
     public String listaFornecedores(Model model) {
-        List fornecedores = fornecedorRepository.findAll();
+        List<Fornecedor> fornecedores = fornecedorRepository.findAll();
 
         model.addAttribute("fornecedores", fornecedores);
         return "fornecedores";
     }
 
-    //retorna a view para cadastro
-    @GetMapping({"/cadastroFornecedor"})
+    // retorna a view para cadastro
+    @GetMapping({ "/cadastroFornecedor" })
     public String cadastroFornecedor() {
         return "cadastroFornecedor";
     }
 
-    //retorna a view para edicao
-    @GetMapping({"/edicaoFornecedor"})
+    // retorna a view para edicao
+    @GetMapping({ "/edicaoFornecedor" })
     public String edicao(long idFornecedor, Model model) {
         Fornecedor fornecedor = fornecedorRepository.findById(idFornecedor).orElse(null);
 
@@ -54,7 +54,7 @@ public class FornecedoresController {
 
     }
 
-    @GetMapping({"/excluirFornecedor"})
+    @GetMapping({ "/excluirFornecedor" })
     public String excluirFornecedor(Model model, long idFornecedor) {
         Fornecedor fornecedor = fornecedorRepository.findById(idFornecedor).orElse(null);
         if (fornecedor != null) {
@@ -62,23 +62,23 @@ public class FornecedoresController {
         }
         return listaFornecedores(model);
     }
-    
-    
-    @PostMapping({"/cadastroFornecedor"})
-    public String cadastrarFornecedor(Model model, Fornecedor fornecedor){
+
+    @PostMapping({ "/cadastroFornecedor" })
+    public String cadastrarFornecedor(Model model, Fornecedor fornecedor) {
         fornecedorRepository.save(fornecedor);
         return listaFornecedores(model);
     }
-    
-    @PostMapping({"/edicaoFornecedor"})
-    public String editarFornecedor(Model model,Long idFornecedor, Fornecedor fornecedor){
-       Fornecedor fornecedorUpdate = fornecedorRepository.findById(idFornecedor).get();
-      
-       fornecedorUpdate.setNome(fornecedor.getNome());
-       fornecedorUpdate.setCnpj(fornecedor.getCnpj());
-       
-       fornecedorRepository.save(fornecedorUpdate);
-       
-       return listaFornecedores(model);
+
+    @PostMapping({ "/edicaoFornecedor" })
+    public String editarFornecedor(Model model, Long idFornecedor, Fornecedor fornecedor) {
+        Fornecedor fornecedorUpdate = fornecedorRepository.findById(idFornecedor).get();
+
+        fornecedorUpdate.setNome(fornecedor.getNome());
+        fornecedorUpdate.setCnpj(fornecedor.getCnpj());
+
+        fornecedorRepository.save(fornecedorUpdate);
+
+        return listaFornecedores(model);
     }
+
 }
