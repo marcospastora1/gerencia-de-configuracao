@@ -69,6 +69,18 @@ public class ProdutoController {
         return "faleConosco";
     }
 
+    // retorna a view para inscrever
+    @GetMapping({ "/inscrever" })
+    public String inscrever() {
+        return "inscrever";
+    }
+
+    // retorna a view para entrar
+    @GetMapping({ "/entrar" })
+    public String entrar() {
+        return "entrar";
+    }
+
     // retorna a view para se inscrever no site
     @GetMapping({ "/inscrever" })
     public String inscrever() {
