@@ -25,8 +25,14 @@ public class ProdutoController {
     @Autowired
     ProdutoRepository produtoRepository;
 
+      // retorna a view para cadastro
+    @GetMapping({ "/", "/home", "/index" })
+    public String home() {
+        return "home";
+    }
+
     // retorna uma página contendo os dados
-    @GetMapping({ "/", "/index" })
+    @GetMapping({ "/produtos"})
     public String lista(Model model) {
         List<Produto> produtos = produtoRepository.findAll();
 
@@ -81,17 +87,9 @@ public class ProdutoController {
         return "entrar";
     }
 
-    // retorna a view para se inscrever no site
-    @GetMapping({ "/inscrever" })
-    public String inscrever() {
-        return "inscrever";
-    }
-
-    // retorna a view para entrar
-    @GetMapping({ "/entrar" })
-    public String entrar() {
-        return "entrar";
-    }
+    
+    
+    
 
     @PostMapping({ "/cadastroProduto" })
     public String cadastrarProduto(Model model, Produto produto) {
