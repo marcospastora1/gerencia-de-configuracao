@@ -66,6 +66,29 @@
                     display: flex;
                     justify-content: space-between;
                 }
+
+                #rodape {
+                    height: 100px;
+                    bottom: 0;
+                    position: fixed;
+                    background-color: #D5D5D5;
+                    text-align: center;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+
+                }
+
+                #sobre {
+                    margin-left: px;
+                    padding-left: 50px;
+
+                    padding-right: 0px;
+
+
+                }
             </style>
         </head>
 
@@ -77,7 +100,8 @@
                 </div>
 
                 <div>
-                    <a href="/home">Voltar</a>
+                    <a href="/">Voltar</a>
+                    
                 </div>
 
 
@@ -128,6 +152,24 @@
                         alert('Você está excluindo esse produto!');
                     }
                 </script>
+                <div class="container body-content">
+                    <footer class="fixarRodape">
+                        <div>
+                            <div id="rodape">
+                                <nav>
+                                    <div>
+                                        <span id='direitosReservados' style='margin-left:50px;'>
+                                            &copy; Unisales, 2022 - Todos os direitos reservados
+                                        </span>
+                                        <a href="" style="padding-left:700px;">Sobre</a>
+                                    </div>
+
+                                </nav>
+
+                            </div>
+                        </div>
+                    </footer>
+                </div>
         </body>
 
         </html>

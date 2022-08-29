@@ -87,9 +87,11 @@ public class ProdutoController {
         return "entrar";
     }
 
-    
-    
-    
+    @GetMapping({ "/sobre" })
+    public String sobre() {
+        return "sobre";
+    }
+
 
     @PostMapping({ "/cadastroProduto" })
     public String cadastrarProduto(Model model, Produto produto) {
