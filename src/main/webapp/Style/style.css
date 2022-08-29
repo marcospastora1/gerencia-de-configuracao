@@ -83,15 +83,23 @@ body {
 
 h1{
     font-family: Arial;
-    
+
 }
- #cabecalho{
-                    color: grey;
-                    background: white;
-                    font-size: 70px;
-                    font-family: serif;
-                    position: absolute;
-                    top: -35px;
-                    right: 10px;
-                }
-                
+#cabecalho{
+    color: grey;
+    background: white;
+    font-size: 70px;
+    font-family: serif;
+    position: absolute;
+    top: -35px;
+    right: 10px;
+}
+
+nav {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}

@@ -27,9 +27,12 @@
                         </button> |
                         <button>
                             <a href="/faleConosco">CONTATO</a>
-                        </button>
+                        </button> |
                         <button>
                             <a href="/fornecedores">FORNECEDORES</a>
+                        </button> |
+                        <button>
+                            <a href="/usuarios">USUÁRIOS</a>
                         </button> |
                         <button>
                             <a href="/entrar">ENTRAR</a>

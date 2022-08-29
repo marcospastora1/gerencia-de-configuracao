@@ -18,17 +18,17 @@
             <form method="POST" action="/cadastroFornecedor">
                 <tr>
                     <td><label>Código</label></td>
-                    <td><input id="codigo" name="codigo"  type="text"/></td>
+                    <td><input id="codigo" name="codigo"  type="text" required/></td>
                 </tr>
-              
+
                 <tr>
                     <td class="td-cadastro"><label>Nome</label></td>
-                    <td class="td-cadastro"><input id="nome" name="nome"  type="text"/></td>
+                    <td class="td-cadastro"><input id="nome" name="nome"  type="text" required/></td>
                 </tr>
-                
+
                 <tr>
                     <td class="td-cadastro"><label>CNPJ</label></td>
-                    <td class="td-cadastro"><input id="cnpj" name="cnpj"  type="text"/></td>
+                    <td class="td-cadastro"><input id="cnpj" name="cnpj"  type="text" requried /></td>
                 </tr>
 
                 <tr>
