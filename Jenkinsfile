@@ -1,30 +1,19 @@
 pipeline {
-	agent any
-	stages {
-		stage('Compile Stage') {
-			
-			steps {
-				withMaven (maven : 'maven_3_8_1') {
-					sh 'mvn clean compile'
-			}
-		}
-	}
-		stage('Testing Stage') {
-		
-			steps {
-				withMaven(maven : 'maven_3_8_1') {
-				sh "mvn test"
-			}
-		}
-	}
-
-		stage('Deployment Stage') {
-			
-			steps {
-				withMaven(maven : 'maven_3_8_1') {
-					sh 'mvn deply'
-				}
-			}
-		}
-	}
+    agent none 
+    stages {
+        stage('Example Build') {
+            agent { docker 'maven:3.8.1-adoptopenjdk-11' } 
+            steps {
+                echo 'Hello, Maven'
+                sh 'mvn --version'
+            }
+        }
+        stage('Example Test') {
+            agent { docker 'openjdk:8-jre' } 
+            steps {
+                echo 'Hello, JDK'
+                sh 'java -version'
+            }
+        }
+    }
 }
