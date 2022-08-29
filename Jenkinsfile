@@ -4,13 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'mvn clean install'
-            }
-        }
-        stage('Test') {
-            steps {
-                sh 'mvn test'
-            }
-        }
-    }   
+                sh 'JAVA_HOME=C:\\Program Files\\Java\\jdk-18.0.2.1'
+            		}
+        	}
+	}
 }
