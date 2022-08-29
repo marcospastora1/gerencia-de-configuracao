@@ -3,7 +3,7 @@
     <head>
         <title>Cadastre-se</title>
         <style>
-         
+
             html {
                 font-family: verdana;
             }
@@ -20,7 +20,7 @@
                 color: blue;
                 font-size:12pt;
                 font-family: verdana;
-                
+
                 margin-left: 10%;
                 margin-bottom: 20px;
             }
@@ -29,55 +29,55 @@
                 color: #05B2D9;
                 text-decoration: underline;
             }
-            
+
             form {
                 margin: 0 auto;
                 width: 40%;
-                
+
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
-                
+
                 border: 1px solid #a4aab3;
                 border-radius: 20px;
-                
+
                 padding: 10px;
             }
-            
+
             label {
                 width: 65%;
                 text-align: left;
             }
-            
+
             input {
                 margin: 10px 0;
                 width: 65%;
             }
-            
+
             input:last-of-type {
                 margin-top: 5px
             }
-            
+
             button {
                 margin-top: 20px;
                 width: 65%
             }
-            
+
             div {
                 width: 100%;
-                    
+
                 display: flex;
                 flex-direction: column;
                 align-items: center
             }
-            
+
             textarea {
                 width: 65%
             }
         </style>
     </head>
-    
+
     <body>
 
         <a href="/usuarios">Voltar</a>
@@ -89,7 +89,7 @@
                 <label for='nome'>Nome</label>
                 <input type="text" name="nome" placeholder="Nome" id='nome' required>
             </div>
-            
+
             <div>
                 <label for='sobrenome'>Sobrenome</label>
                 <input type="text" name="sobrenome" placeholder="Sobrenome" id='sobrenome' required>
@@ -99,12 +99,12 @@
                 <label for="e-mail">Email</label>
                 <input type="email" name="email" placeholder="seuemail@email.com" id="email" required>
             </div>
-            
+
             <div>
                 <label for="e-mail">Senha</label>
                 <input type="password" name="senha" placeholder="Senha" id="senha" required>
             </div>
-            
+
             <div>
                 <label for="e-mail">Telefone</label>
                 <input type="text" name="telefone" placeholder="(XX) XXXXX-XXXX" id="telefone" required>
@@ -116,11 +116,11 @@
             </div>  
 
             <div>
-              <button type="submit" value="Salvar" onclick="cadastro()">Cadastrar</button>
+                <button type="submit" value="Salvar" onclick="cadastro()">Cadastrar</button>
             </div>
 
         </form>
-            
+
         <script>
             function Cadastro() {
 
@@ -131,10 +131,10 @@
                 let inputTelefone = document.getElementById('telefone');
                 let inputNascimento = document.getElementById('nascimento');
 
-                if(inputNome.value === '' || inputEmail.value === '' || inputNascimento.value === '' || inputSenha.value === '' || inputTelefone.value === '' || inputSobrenome.value === '') {
+                if (inputNome.value === '' || inputEmail.value === '' || inputNascimento.value === '' || inputSenha.value === '' || inputTelefone.value === '' || inputSobrenome.value === '') {
                     alert('Campos vazios ou dados inválidos. Tente Novamente.');
                 } else {
-                    alert('Cadastrado com sucesso! Obrigado!');  
+                    alert('Cadastrado com sucesso! Obrigado!');
                 }
             }
         </script>
