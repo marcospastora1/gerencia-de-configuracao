@@ -14,7 +14,7 @@
                 <h1 class="title-produtos">Lista de Fornecedores</h1>
                 <div>
                     <nav>
-                        <a href="/cadastroFornecedor">+ Cadastrar novo usuário</a>
+                        <a href="/cadastroFornecedor">+ Cadastrar novo fornecedor</a>
 
                         <div>
                             <a href="/home">Voltar</a>

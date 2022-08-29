@@ -13,11 +13,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <!--CSS-->
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="Style/css/reset.css">
+    <link rel="stylesheet" href="Style/css/header.css">
+    <link rel="stylesheet" href="Style/css/footer.css">
+    <link rel="stylesheet" href="Style/css/main.css">
+    <link rel="stylesheet" href="Style/css/responsive.css">
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,19 +56,19 @@
 
                     <div class="cards-container">
                         <div class="card">
-                            <img src="./img/techs/html5-logo.png" alt="Logo do HTML5">
+                            <img src="Imagens do Projeto/img/techs/html5-logo.png" alt="Logo do HTML5">
                         </div>
 
                         <div class="card">
-                            <img src="./img/techs/logo-css.png" alt="Logo do CSS">
+                            <img src="Imagens do Projeto/img/techs/logo-css.png" alt="Logo do CSS">
                         </div>
 
                         <div class="card">
-                            <img src="./img/techs/javascript.png" alt="Logo do Javascript">
+                            <img src="Imagens do Projeto/img/techs/javascript.png" alt="Logo do Javascript">
                         </div>
 
                         <div class="card">
-                            <img src="./img/techs/React-icon.png" alt="Logo do React">
+                            <img src="Imagens do Projeto/img/techs/React-icon.png" alt="Logo do React">
                         </div>
 
                     </div>
@@ -119,17 +119,17 @@
         </section>
 
         <figure>
-            <img src="./img/techs/RAVELLINK.jpg" alt="Imagem de Ravel Cravo">
+            <img src="Imagens do Projeto/img/techs/RAVELLINK.jpg" alt="Imagem de Ravel Cravo">
             <figcaption>Ravel Cravo Carvalho</figcaption>
-            <img src="./img/techs/jose.jpg" alt="Imagem de Jose Renato">
+            <img src="Imagens do Projeto/img/techs/jose.jpg" alt="Imagem de Jose Renato">
             <figcaption>José Renato</figcaption>
-            <img src="./img/techs/glayton" alt="Imagem de Glayton">
+            <img src="Imagens do Projeto/img/techs/glayton" alt="Imagem de Glayton">
             <figcaption>Galyton Verissimo</figcaption>
-            <img src="./img/techs/wasny.jpg" alt="Imagem de Wasny">
+            <img src="Imagens do Projeto/img/techs/wasny.jpg" alt="Imagem de Wasny">
             <figcaption>Wasny Moreira</figcaption>
-            <img src="./img/techs/marcos.jpg" alt="Imagem de Marcos">
+            <img src="Imagens do Projeto/img/techs/marcos.jpg" alt="Imagem de Marcos">
             <figcaption>Marcos Pastora</figcaption>
-            <img src="./img/techs/jefao.jpg" alt="Imagem de Jefferson">
+            <img src="Imagens do Projeto/img/techs/jefao.jpg" alt="Imagem de Jefferson">
             <figcaption>Jefferson Costa</figcaption>
 
         </figure>
