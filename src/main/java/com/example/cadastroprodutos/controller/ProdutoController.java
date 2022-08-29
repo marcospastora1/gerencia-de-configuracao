@@ -87,32 +87,17 @@ public class ProdutoController {
         return "entrar";
     }
 
-    
-    
-//<<<<<<< HEAD
-    //retorna a view para se inscrever no site
-    //@GetMapping({"/inscrever"})
-   // public String inscrever() {
-    //    return "inscrever";
-    //}
-    
-    ////retorna a view para entrar
-    //@GetMapping({"/entrar"})
-    //public String entrar() {
-    //    return "entrar";
-    //}
-    
-    //@PostMapping({"/cadastroProduto"})
-    //public String cadastrarProduto(Model model, Produto produto){
-//=======
-    
+    @GetMapping({ "/sobre" })
+    public String sobre() {
+        return "sobre";
+    }
 
-    //@PostMapping({ "/cadastroProduto" })
-    //public String cadastrarProduto(Model model, Produto produto) {
-//>>>>>>> 37a6533e65a0128ae8ec2792b7841c0ac241ed5b
-       // produtoRepository.save(produto);
-        //return lista(model);
-    //}
+
+    @PostMapping({ "/cadastroProduto" })
+    public String cadastrarProduto(Model model, Produto produto) {
+        produtoRepository.save(produto);
+        return lista(model);
+    }
 
     @PostMapping({ "/edicaoProduto" })
     public String editarProduto(Model model, Long idProduto, Produto produto) {
