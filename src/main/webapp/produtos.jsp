@@ -81,14 +81,6 @@
 
                 }
 
-                #sobre {
-                    margin-left: px;
-                    padding-left: 50px;
-
-                    padding-right: 0px;
-
-
-                }
             </style>
         </head>
 
@@ -161,7 +153,6 @@
                                         <span id='direitosReservados' style='margin-left:50px;'>
                                             &copy; Unisales, 2022 - Todos os direitos reservados
                                         </span>
-                                        <a href="" style="padding-left:700px;">Sobre</a>
                                     </div>
 
                                 </nav>

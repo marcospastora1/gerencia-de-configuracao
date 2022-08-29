@@ -62,5 +62,19 @@
                 alert('Você está excluindo esse usuário!');
             }
         </script>
+        <footer style ="height: 100px;
+                    bottom: 0;
+                    position: fixed;
+                    background-color: #D5D5D5;
+                    text-align: center;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;">
+        <span>
+            &copy; Unisales, 2022 - Todos os direitos reservados
+        </span>
+
+    </footer>
     </body>
 </html>

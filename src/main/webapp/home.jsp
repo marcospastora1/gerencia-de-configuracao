@@ -57,6 +57,23 @@
                 </div>
 
                 <div id="cabecalho"><button><a href="/inscrever"> Cadastre-se </button></div>
+                <footer style="display: flex;
+                    justify-content: space-between;
+                    height: 100px;
+                    bottom: 0;
+                    background-color: #D5D5D5;
+                    text-align: center;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                   ">
+                    <div>
+                        <span style="width: 100%;">
+            &copy; Unisales, 2022 - Todos os direitos reservados
+        </span>
+                    </div>
+
+    </footer>
         </body>
 
         </html>
