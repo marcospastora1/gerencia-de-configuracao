@@ -1,125 +1,133 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Produtos</title>
-        <style>
-            table, a{
-                font-size:12pt;
-                font-family: verdana;
-            }
-            h1 {
-                color: black;
-                text-align: center;
-                font-family: verdana;
-                margin-bottom: 30px;
-            }
-            a{
-                display:inline-block;
-                text-decoration: none;
-                color: blue;
+    <%@page contentType="text/html" pageEncoding="UTF-8" %>
+        <!DOCTYPE html>
+        <html>
 
-                padding: 0 10px;
-            }
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <title>Produtos</title>
+            <style>
+                table,
+                a {
+                    font-size: 12pt;
+                    font-family: verdana;
+                }
 
-            a:first-of-type {
-                padding-left: 0;
-            }
+                h1 {
+                    color: black;
+                    text-align: center;
+                    font-family: verdana;
+                    margin-bottom: 30px;
+                }
 
-            a:last-of-type {
-                padding-right: 0;
-            }
-            a:hover {
-                color: #05B2D9;
-                text-decoration: underline;
-            }
-            table{
-                border-collapse: collapse;
-                width:80%;
-                margin-left: 10%;
-            }
-            td{
-                border:1px solid black;
-                text-align: center;
-            }
-            th {
-                border:1px solid black;
-                text-align: center;
-                background-color: #D5D5D5;
-            }
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    color: blue;
 
-            nav {
-                margin-left: 10%;
-                margin-right: 10%;
-                margin-bottom: 20px;
+                    padding: 0 10px;
+                }
 
-                display: flex;
-                justify-content: space-between;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Lista de Produtos</h1>
-        <nav>
-            <div>
-                <a href="/cadastroProduto" >+ Cadastrar novo produto</a>
-            </div>
+                a:first-of-type {
+                    padding-left: 0;
+                }
 
-            <div>
-                <a href="/entrar" >Entrar</a>
-                <a href="/inscrever" >Cadastre-se</a>
-                <a href="/faleConosco" >Fale conosco</a>
-            </div>
+                a:last-of-type {
+                    padding-right: 0;
+                }
 
+                a:hover {
+                    color: #05B2D9;
+                    text-decoration: underline;
+                }
 
-        </nav>
-        <table>
+                table {
+                    border-collapse: collapse;
+                    width: 80%;
+                    margin-left: 10%;
+                }
 
+                td {
+                    border: 1px solid black;
+                    text-align: center;
+                }
 
+                th {
+                    border: 1px solid black;
+                    text-align: center;
+                    background-color: #D5D5D5;
+                }
+
+                nav {
+                    margin-left: 10%;
+                    margin-right: 10%;
+                    margin-bottom: 20px;
+
+                    display: flex;
+                    justify-content: space-between;
+                }
+            </style>
         </head>
 
-        <table class="produtos">
+        <body>
+            <h1>Lista de Produtos</h1>
+            <nav>
+                <div>
+                    <a href="/cadastroProduto">+ Cadastrar novo produto</a>
+                </div>
 
-            <thead>
-                <tr>
-                    <th>Código</th>
-                    <th id="desc">Descrição</th>
-                    <th>Unidade Medida</th>
-                    <th>Preço Unitário</th>
-                    <th>Quantidade</th>
-                    <th>Valor Total</th>
-                    <th>Opções</th>
-                </tr>
-            </thead>
-            <tbody>
-                <c:forEach items="${produtos}" var="produto">
-                    <tr>
-                        <td>${produto.codigo}</td>
-                        <td>${produto.descricao}</td>
-                        <td>${produto.unidadeVenda}</td>
-                        <td>R$ ${produto.preco}</td>
-                        <td>${produto.quantidade}</td>
-                        <td> R$ ${produto.preco* produto.quantidade}</td>
-                        <td>
-                            <a  href="/edicaoProduto?idProduto=${produto.idProduto}" style="float:left;">
-                                Editar
-                            </a>
+                <div>
+                    <a href="/home">Voltar</a>
+                </div>
 
-                            <a href="/excluirProduto?idProduto=${produto.idProduto}" onclick="excluir()">
-                                Excluir
-                            </a>
-                        </td>
-                    </tr>
-                </c:forEach>
 
-            </tbody>
-        </table>
-        <script>
-            function excluir() {
-                alert('Você está excluindo esse produto!');
-            }
-        </script>
-</body>
-</html>
+            </nav>
+            <table>
+
+
+                </head>
+
+                <table class="produtos">
+
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th id="desc">Descrição</th>
+                            <th>Unidade Medida</th>
+                            <th>Preço Unitário</th>
+                            <th>Quantidade</th>
+                            <th>Valor Total</th>
+                            <th>Opções</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <c:forEach items="${produtos}" var="produto">
+                            <tr>
+                                <td>${produto.codigo}</td>
+                                <td>${produto.descricao}</td>
+                                <td>${produto.unidadeVenda}</td>
+                                <td>R$ ${produto.preco}</td>
+                                <td>${produto.quantidade}</td>
+                                <td> R$ ${produto.preco* produto.quantidade}</td>
+                                <td>
+                                    <a href="/edicaoProduto?idProduto=${produto.idProduto}" style="float:left;">
+                                        Editar
+                                    </a>
+
+                                    <a href="/excluirProduto?idProduto=${produto.idProduto}" onclick="excluir()">
+                                        Excluir
+                                    </a>
+                                </td>
+                            </tr>
+                        </c:forEach>
+
+                    </tbody>
+                </table>
+                <script>
+                    function excluir() {
+                        alert('Você está excluindo esse produto!');
+                    }
+                </script>
+        </body>
+
+        </html>
