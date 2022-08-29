@@ -139,15 +139,12 @@
 
             </main>
 
-            <footer style ="height: 100px;
-                    bottom: 0;
-                    position: fixed;
-                    background-color: #D5D5D5;
-                    text-align: center;
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;">
+            <footer style ="padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: 200;">
         <span>
             &copy; Unisales, 2022 - Todos os direitos reservados
         </span>

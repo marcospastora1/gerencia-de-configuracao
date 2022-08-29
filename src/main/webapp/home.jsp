@@ -23,7 +23,7 @@
                             <a href="/produtos"> PRODUTOS</a>
                         </button>|
                         <button>
-                            <a href="#">SOBRE</a>
+                            <a href="/sobre">SOBRE</a>
                         </button> |
                         <button>
                             <a href="/faleConosco">CONTATO</a>
@@ -57,15 +57,14 @@
                 </div>
 
                 <div id="cabecalho"><button><a href="/inscrever"> Cadastre-se </button></div>
-                <footer style="display: flex;
-                    justify-content: space-between;
-                    height: 100px;
-                    bottom: 0;
+                <footer style="
                     background-color: #D5D5D5;
-                    text-align: center;
-                    width: 100%;
-                    justify-content: center;
+                    padding: 16px;
+                    display: flex;
                     align-items: center;
+                    justify-content: center;
+                    font-size: 0.8em;
+                    font-weight: 200;
                    ">
                     <div>
                         <span style="width: 100%;">
