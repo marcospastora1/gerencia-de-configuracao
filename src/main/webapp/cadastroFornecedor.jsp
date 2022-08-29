@@ -39,6 +39,9 @@
                     </td>
                 </tr>
             </form>
+            <div>
+                <a href="/fornecedores">Voltar</a>
+            </div>
         </table>
     </body>
 </html>
