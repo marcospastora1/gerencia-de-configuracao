@@ -25,23 +25,29 @@ public class ProdutoController {
     @Autowired
     ProdutoRepository produtoRepository;
 
-    //retorna uma página contendo os dados
-    @GetMapping({"/", "/index"})
+      // retorna a view para cadastro
+    @GetMapping({ "/", "/home", "/index" })
+    public String home() {
+        return "home";
+    }
+
+    // retorna uma página contendo os dados
+    @GetMapping({ "/produtos"})
     public String lista(Model model) {
-        List produtos = produtoRepository.findAll();
+        List<Produto> produtos = produtoRepository.findAll();
 
         model.addAttribute("produtos", produtos);
         return "produtos";
     }
 
-    //retorna a view para cadastro
-    @GetMapping({"/cadastroProduto"})
+    // retorna a view para cadastro
+    @GetMapping({ "/cadastroProduto" })
     public String cadastro() {
         return "cadastroProduto";
     }
 
-    //retorna a view para edicao
-    @GetMapping({"/edicaoProduto"})
+    // retorna a view para edicao
+    @GetMapping({ "/edicaoProduto" })
     public String edicao(long idProduto, Model model) {
         Produto produto = produtoRepository.findById(idProduto).orElse(null);
 
@@ -54,7 +60,7 @@ public class ProdutoController {
 
     }
 
-    @GetMapping({"/excluirProduto"})
+    @GetMapping({ "/excluirProduto" })
     public String excluirProduto(Model model, long idProduto) {
         Produto produto = produtoRepository.findById(idProduto).orElse(null);
         if (produto != null) {
@@ -62,24 +68,28 @@ public class ProdutoController {
         }
         return lista(model);
     }
-    
-    //retorna a view para contato
-    @GetMapping({"/faleConosco"})
+
+    // retorna a view para contato
+    @GetMapping({ "/faleConosco" })
     public String faleConosco() {
         return "faleConosco";
     }
-        //retorna a view para inscrever
-    @GetMapping({"/inscrever"})
+
+    // retorna a view para inscrever
+    @GetMapping({ "/inscrever" })
     public String inscrever() {
         return "inscrever";
     }
-        //retorna a view para entrar
-    @GetMapping({"/entrar"})
+
+    // retorna a view para entrar
+    @GetMapping({ "/entrar" })
     public String entrar() {
         return "entrar";
     }
+
     
     
+//<<<<<<< HEAD
     //retorna a view para se inscrever no site
     //@GetMapping({"/inscrever"})
    // public String inscrever() {
@@ -92,24 +102,30 @@ public class ProdutoController {
     //    return "entrar";
     //}
     
-    @PostMapping({"/cadastroProduto"})
-    public String cadastrarProduto(Model model, Produto produto){
-        produtoRepository.save(produto);
-        return lista(model);
-    }
+    //@PostMapping({"/cadastroProduto"})
+    //public String cadastrarProduto(Model model, Produto produto){
+//=======
     
-    @PostMapping({"/edicaoProduto"})
-    public String editarProduto(Model model,Long idProduto, Produto produto){
-       Produto produtoUpdate = produtoRepository.findById(idProduto).get();
-      
-       produtoUpdate.setCodigo(produto.getCodigo());
-       produtoUpdate.setDescricao(produto.getDescricao());
-       produtoUpdate.setPreco(produto.getPreco());
-       produtoUpdate.setQuantidade(produto.getQuantidade());
-       produtoUpdate.setUnidadeVenda(produto.getUnidadeVenda());
-       
-       produtoRepository.save(produtoUpdate);
-       
-       return lista(model);
+
+    //@PostMapping({ "/cadastroProduto" })
+    //public String cadastrarProduto(Model model, Produto produto) {
+//>>>>>>> 37a6533e65a0128ae8ec2792b7841c0ac241ed5b
+       // produtoRepository.save(produto);
+        //return lista(model);
+    //}
+
+    @PostMapping({ "/edicaoProduto" })
+    public String editarProduto(Model model, Long idProduto, Produto produto) {
+        Produto produtoUpdate = produtoRepository.findById(idProduto).get();
+
+        produtoUpdate.setCodigo(produto.getCodigo());
+        produtoUpdate.setDescricao(produto.getDescricao());
+        produtoUpdate.setPreco(produto.getPreco());
+        produtoUpdate.setQuantidade(produto.getQuantidade());
+        produtoUpdate.setUnidadeVenda(produto.getUnidadeVenda());
+
+        produtoRepository.save(produtoUpdate);
+
+        return lista(model);
     }
 }
