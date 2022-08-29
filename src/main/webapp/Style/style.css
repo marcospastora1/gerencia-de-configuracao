@@ -30,7 +30,7 @@ a{
 
 a:hover {
     color: #05B2D9;
-    text-decoration: underline;
+    text-decoration: none;
 }
 .produtos{
     border-collapse: collapse;
@@ -74,4 +74,32 @@ button {
 .td-cadastro, .td-edicao {
     width: 200px;
     height: 30px;
+}
+
+body {
+    background: url('/Imagens do Projeto/12-free-blurred-backgrounds.jpg');
+    font: 16px Arial,  sans-serif;
+}
+
+h1{
+    font-family: Arial;
+
+}
+#cabecalho{
+    color: grey;
+    background: white;
+    font-size: 70px;
+    font-family: serif;
+    position: absolute;
+    top: -20px;
+    right: 15px;
+}
+
+nav {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
 }
