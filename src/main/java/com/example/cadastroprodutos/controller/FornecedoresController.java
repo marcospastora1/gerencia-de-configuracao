@@ -75,6 +75,7 @@ public class FornecedoresController {
 
         fornecedorUpdate.setNome(fornecedor.getNome());
         fornecedorUpdate.setCnpj(fornecedor.getCnpj());
+        fornecedorUpdate.setCodigo (fornecedor.getCodigo());
 
         fornecedorRepository.save(fornecedorUpdate);
 

@@ -20,14 +20,14 @@
                 display:inline-block;
                 text-decoration: none;
                 color: blue;
-                
+
                 padding: 0 10px;
             }
-            
+
             a:first-of-type {
                 padding-left: 0;
             }
-            
+
             a:last-of-type {
                 padding-right: 0;
             }
@@ -54,7 +54,7 @@
                 margin-left: 10%;
                 margin-right: 10%;
                 margin-bottom: 20px;
-                
+
                 display: flex;
                 justify-content: space-between;
             }
@@ -66,19 +66,19 @@
             <div>
                 <a href="/cadastroProduto" >+ Cadastrar novo produto</a>
             </div>
-            
+
             <div>
                 <a href="/entrar" >Entrar</a>
                 <a href="/inscrever" >Cadastre-se</a>
                 <a href="/faleConosco" >Fale conosco</a>
             </div>
 
-            
+
         </nav>
         <table>
 
 
-    </head>
+        </head>
 
         <table class="produtos">
 
@@ -107,7 +107,7 @@
                                 Editar
                             </a>
 
-                            <a href="/excluirProduto?idProduto=${produto.idProduto}">
+                            <a href="/excluirProduto?idProduto=${produto.idProduto}" onclick="excluir()">
                                 Excluir
                             </a>
                         </td>
@@ -116,5 +116,10 @@
 
             </tbody>
         </table>
-    </body>
+        <script>
+            function excluir() {
+                alert('Você está excluindo esse produto!');
+            }
+        </script>
+</body>
 </html>
