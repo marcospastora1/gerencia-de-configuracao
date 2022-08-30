@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                dir("C:\Users\glayt\Downloads\gerencia-de-configuracao") {
+                dir("C:/Users/glayt/Downloads/gerencia-de-configuracao") {
                 bat 'mvn -B -DskipTests clean package'
                 }
             }
