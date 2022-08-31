@@ -23,12 +23,16 @@ import lombok.Setter;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-public class Fornecedor {
+public class Usuario {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idFornecedor;
-    
-    private String codigo;
+    private Long idUsuario;
+
     private String nome;
-    private String cnpj;
+    private String sobrenome;
+    private String email;
+    private String senha;
+    private String telefone;
+    private String nascimento;
 }

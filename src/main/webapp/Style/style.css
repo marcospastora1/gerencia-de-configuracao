@@ -30,7 +30,7 @@ a{
 
 a:hover {
     color: #05B2D9;
-    text-decoration: underline;
+    text-decoration: none;
 }
 .produtos{
     border-collapse: collapse;
@@ -77,6 +77,34 @@ button {
 }
 
 body {
+<<<<<<< HEAD
     background: #d2d2c1 url('/Imagens do Projeto/Fundo-Site.jpg');
     font: 16px Arial, Helvetica, sans-serif;
+=======
+    background: url('/Imagens do Projeto/12-free-blurred-backgrounds.jpg');
+    font: 16px Arial,  sans-serif;
+}
+
+h1{
+    font-family: Arial;
+
+}
+#cabecalho{
+    color: grey;
+    background: white;
+    font-size: 70px;
+    font-family: serif;
+    position: absolute;
+    top: -20px;
+    right: 15px;
+}
+
+nav {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+>>>>>>> 08579784e8eac5152616056d712c5e36be9535ce
 }

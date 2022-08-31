@@ -87,6 +87,7 @@ public class ProdutoController {
         return "entrar";
     }
 
+<<<<<<< HEAD
     @GetMapping({ "/cadusuario"})
     public String cadusuario(Model model) {
         return "cadusuario";    
@@ -94,6 +95,13 @@ public class ProdutoController {
     
     
     
+=======
+    @GetMapping({ "/sobre" })
+    public String sobre() {
+        return "sobre";
+    }
+
+>>>>>>> 08579784e8eac5152616056d712c5e36be9535ce
 
     @PostMapping({ "/cadastroProduto" })
     public String cadastrarProduto(Model model, Produto produto) {

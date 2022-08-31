@@ -32,28 +32,28 @@
             <form method="POST" action="/cadastroProduto">
                 <tr>
                     <td><label>Código</label></td>
-                    <td><input id="descricao" name="codigo"  type="text"/></td>
+                    <td><input id="descricao" name="codigo"  type="text" required/></td>
                 </tr>
                 <tr>
                     <td><label>Descrição</label></td>
-                    <td><input id="descricao" name="descricao"  type="text"/></td>
+                    <td><input id="descricao" name="descricao"  type="text" required/></td>
                 </tr>
-                
+
                 <tr>
                     <td><label>Unidade Medida</label></td>
-                    <td><input id="unidadeVenda" name="unidadeVenda"  type="text"/></td>
+                    <td><input id="unidadeVenda" name="unidadeVenda"  type="text" required/></td>
                 </tr>
-                
+
                 <tr>
                     <td><label>Preço</label></td>
-                    <td><input id="preco" name="preco"  type="text"/></td>
+                    <td><input id="preco" name="preco"  type="text" required/></td>
                 </tr>
 
                 <tr>
                     <td><label>Quantidade</label></td>
-                    <td><input id="quantidade" name="quantidade"  type="text"/></td>
+                    <td><input id="quantidade" name="quantidade"  type="text" required/></td>
                 </tr>
-                
+
                 <tr>
                     <td colspan="2" id="button">
                         <button type="submit" value="Salvar">
@@ -62,6 +62,9 @@
                     </td>
                 </tr>
             </form>
+            <div>
+                <a href="/produtos">Voltar</a>
+            </div>
         </table>
     </body>
 </html>
